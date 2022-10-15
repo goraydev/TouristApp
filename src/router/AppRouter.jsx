@@ -4,7 +4,7 @@ import { TouristRoutes } from "../TouristApp";
 
 const AppRouter = () => {
   return (
-    <div className="container mx-auto">
+    <div className="bg-yellow-500">
       <Routes>
         <Route path="login" element={<LoginPage />} />
         <Route path="/*" element={<TouristRoutes />} />
