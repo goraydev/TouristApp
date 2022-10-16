@@ -32,7 +32,6 @@ const LoginPage = () => {
       return;
     }
 
-    
     login(user, password);
     navigate("/mapas", {
       replace: true,
