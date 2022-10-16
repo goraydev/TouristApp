@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
 import useForm from "../../hooks/useForm";
@@ -7,6 +7,7 @@ import { Notification } from "../../ui";
 const admin = { user: "Gerson", password: "12345" };
 
 const LoginPage = () => {
+  const [error, setError] = useState(false);
   const {
     formState: { user, password },
     onInputChange,
@@ -20,22 +21,32 @@ const LoginPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!user.length || !password.length) return;
+
+    if (!user.length || !password.length) {
+      setError(true);
+      return;
+    }
 
     if (user.trim() !== admin.user || password.trim() !== admin.password) {
-      console.log("usuario no existe");
-    } else {
-      login(user, password);
-
-      navigate("/mapa", {
-        replace: true,
-      });
+      setError(true);
+      return;
     }
+
+    
+    login(user, password);
+    navigate("/mapas", {
+      replace: true,
+    });
   };
 
   return (
     <div className="h-screen flex flex-col items-center justify-center">
-      <h1 className="text-4xl my-2">BSC - Tourist App</h1>
+      <h1 className="text-4xl my-4">BSC - Tourist App</h1>
+      <Notification
+        message="Usuario no existe"
+        error={error}
+        setError={setError}
+      />
       <form
         action=""
         onSubmit={handleSubmit}
@@ -65,6 +76,7 @@ const LoginPage = () => {
             className="bg-transparent outline-none border-b border-b-white focus:border-b-black"
           />
         </div>
+
         <button
           type="submit"
           className="bg-yellow-500 p-2 rounded-md self-center hover:bg-yellow-600 hover:text-white"
