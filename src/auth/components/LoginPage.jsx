@@ -4,7 +4,7 @@ import { AuthContext } from "../context/AuthContext";
 import useForm from "../../hooks/useForm";
 import { Notification } from "../../ui";
 
-const admin = { user: "Gerson", password: "12345" };
+const admin = { user: "Admin", password: "12345" };
 
 const LoginPage = () => {
   const [error, setError] = useState(false);
