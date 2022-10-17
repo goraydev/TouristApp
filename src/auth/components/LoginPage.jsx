@@ -39,50 +39,53 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="h-screen flex flex-col items-center justify-center">
-      <h1 className="text-4xl my-4">BSC - Tourist App</h1>
-      <Notification
-        message="Usuario no existe"
-        error={error}
-        setError={setError}
-      />
-      <form
-        action=""
-        onSubmit={handleSubmit}
-        className="container mx-auto w-11/12 flex flex-col gap-6 rounded-md form-blur backdrop-blur-xl p-2"
-        autoComplete="off"
-      >
-        <div className="flex flex-col gap-2">
-          <label htmlFor="user">Usuario:</label>
-          <input
-            type="text"
-            name="user"
-            id="user"
-            value={user}
-            onChange={onInputChange}
-            className="bg-transparent outline-none border-b border-b-white focus:border-b-black"
-          />
-        </div>
-
-        <div className="flex flex-col gap-2">
-          <label htmlFor="user">Contraseña:</label>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            value={password}
-            onChange={onInputChange}
-            className="bg-transparent outline-none border-b border-b-white focus:border-b-black"
-          />
-        </div>
-
-        <button
-          type="submit"
-          className="bg-yellow-500 p-2 rounded-md self-center hover:bg-yellow-600 hover:text-white"
+    <div className="h-screen flex">
+      <img src="../../../public/logota.png" alt="logota" className="w-5/12 object-cover" />
+      <div className="self-center flex-1">
+        <h1 className="text-4xl my-4 text-center">BSC - Tourist App</h1>
+        <Notification
+          message="Usuario no existe"
+          error={error}
+          setError={setError}
+        />
+        <form
+          action=""
+          onSubmit={handleSubmit}
+          className="container mx-auto w-11/12 flex flex-col gap-6 rounded-md form-blur backdrop-blur-xl p-2"
+          autoComplete="off"
         >
-          Ingresar
-        </button>
-      </form>
+          <div className="flex flex-col gap-2">
+            <label htmlFor="user">Usuario:</label>
+            <input
+              type="text"
+              name="user"
+              id="user"
+              value={user}
+              onChange={onInputChange}
+              className="bg-transparent outline-none border-b border-b-white focus:border-b-black"
+            />
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <label htmlFor="user">Contraseña:</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              value={password}
+              onChange={onInputChange}
+              className="bg-transparent outline-none border-b border-b-white focus:border-b-black"
+            />
+          </div>
+
+          <button
+            type="submit"
+            className="bg-yellow-500 p-2 rounded-md self-center hover:bg-yellow-600 hover:text-white"
+          >
+            Ingresar
+          </button>
+        </form>
+      </div>
     </div>
   );
 };
