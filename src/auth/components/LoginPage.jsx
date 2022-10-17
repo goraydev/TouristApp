@@ -40,7 +40,11 @@ const LoginPage = () => {
 
   return (
     <div className="h-screen flex">
-      <img src="../../../public/logota.png" alt="logota" className="w-5/12 object-cover" />
+      <img
+        src="/logota.png"
+        alt="logota"
+        className="w-3/6 object-cover hidden md:block"
+      />
       <div className="self-center flex-1">
         <h1 className="text-4xl my-4 text-center">BSC - Tourist App</h1>
         <Notification
