@@ -1,0 +1,205 @@
+
+@charset "utf-8"
+
+// 0-tools
+@import '0-tools/bootstrap'
+@import '0-tools/bourbon/bourbon'
+
+// 1-base - Base, buttons, icons, vars //
+@import '1-base/vars'
+@import '1-base/base'
+
+
+// 2-modules - flex-video, single-nav,
+//@import '2-modules/nav'
+
+// 3-sections
+//@import '3-sections/1-header'
+.row
+  margin-top: 20px
+.fundo-branco
+  background-color: white
+#titulo
+  margin-top: 40px
+  margin-bottom: 40px
+  text-align: center
+  h1
+    font-size: 1.8rem
+h3
+  padding: 20px 0 20px 25px
+  margin: 39px 0
+  position: relative
+  max-width: 182px
+  color: white
+  &::after
+    content: ""
+    width: 0
+    height: 0
+    position: absolute
+    right: -20px
+    top: 0
+    border-top: 50px solid transparent
+    border-bottom: 50px solid transparent
+
+
+
+// linha-um
+#linha-um
+  p
+    font-size: 0.7rem
+  .cabecalho
+    border-right: 15px solid $verde
+    padding-top: 20px
+    &:last-child
+      border-right: none
+    img
+      margin-top: 20%
+// linha-dois
+#linha-dois
+  padding: 12px
+  h3
+    background-color: $roxo
+    &::after
+      border-left: 20px solid $roxo
+  p
+    background-color: $roxo
+    text-align: center
+    position: relative
+    margin-top: 65px
+    padding: 5px 0
+    height: 70px
+    width: 300px
+    font-size: 0.8rem
+    &::after
+      content: ""
+      width: 0
+      height: 0
+      border-right: 150px solid transparent
+      border-left: 150px solid transparent
+      border-bottom: 34px solid $roxo
+      position: absolute
+      top: -34px
+      left: 0
+
+
+
+// linha-tres
+#linha-tres
+  padding: 12px //colocar em todos
+  .borda-vermelha
+    border: 5px solid $vermelho
+    border-radius: 20px
+    padding: 5px
+    position: relative
+
+    span
+      font-size: 0.75rem
+      position: absolute
+      background-color: white
+      padding: 0 5px
+
+    #borda-vermelha-span-um
+      bottom: -9px
+      left: 17%
+
+    #borda-vermelha-span-dois
+        bottom: -9px
+        left: 28%
+        padding: 0 5px
+
+  h3
+    background-color: $vermelho
+    &::after
+      border-left: 20px solid $vermelho
+
+  #padding-left
+    padding: 0 0 0 10px
+    p
+      &::after
+        border-right: 39px solid transparent
+        border-left: 39px solid transparent
+
+  p
+    font-size: 0.75rem
+    background-color: $vermelho
+    text-align: center
+    position: relative
+    margin-top: 65px
+    padding: 5px 2px
+    //overflow: hidden
+
+    &::after
+      content: ""
+      width: 0
+      height: 0
+      border-right: 40px solid transparent
+      border-left: 40px solid transparent
+      border-bottom: 34px solid $vermelho
+      position: absolute
+      top: -34px
+      left: 0
+
+// linha-quatro
+#linha-quatro
+  padding: 12px //colocar em todos
+  .borda-amarela
+    border: 5px solid $amarelo
+    border-radius: 20px
+    padding: 5px
+
+  h3
+    background-color: $amarelo
+    &::after
+      border-left: 20px solid $amarelo
+  p
+    font-size: 0.75rem
+    background-color: $amarelo
+    text-align: center
+    position: relative
+    margin-top: 65px
+    padding: 5px 2px
+
+    &::after
+      content: ""
+      width: 0
+      height: 0
+      border-right: 40px solid transparent
+      border-left: 40px solid transparent
+      border-bottom: 34px solid $amarelo
+      position: absolute
+      top: -34px
+      left: 0
+
+  #linha-quatro-irregular
+    &::after
+      border-right: 96px solid transparent
+      border-left: 96px solid transparent
+
+// linha-cinco
+#linha-cinco
+  padding: 12px //colocar em todos
+
+  h3
+    background-color: $azul
+    &::after
+      border-left: 20px solid $azul
+
+  p
+    background-color: $azul
+    text-align: center
+    position: relative
+    margin-top: 65px
+    padding: 5px 0
+    height: 70px
+    width: 300px
+    font-size: 0.8rem
+    &::after
+      content: ""
+      width: 0
+      height: 0
+      border-right: 150px solid transparent
+      border-left: 150px solid transparent
+      border-bottom: 34px solid $azul
+      position: absolute
+      top: -34px
+      left: 0
