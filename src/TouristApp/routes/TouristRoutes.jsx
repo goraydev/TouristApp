@@ -1,5 +1,5 @@
 import { Navigate, Route, Routes } from "react-router-dom";
-import { NavBar } from "../../ui";
+import { Footer, NavBar } from "../../ui";
 import MapaEstrategicoPage from "../components/MapaEstrategicoPage";
 import TouristPage from "../components/TouristPage";
 
@@ -14,6 +14,7 @@ const TouristRoutes = () => {
           <Route path="/*" element={<Navigate to="/balance" />} />
         </Routes>
       </div>
+      <Footer />
     </>
   );
 };
