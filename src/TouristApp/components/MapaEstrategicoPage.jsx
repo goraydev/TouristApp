@@ -1,4 +1,3 @@
-import Iframe from "react-iframe";
 const MapaEstrategicoPage = () => {
   return (
     <div>
