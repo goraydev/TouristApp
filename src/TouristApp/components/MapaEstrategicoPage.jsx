@@ -81,9 +81,7 @@ const MapaEstrategicoPage = () => {
               <h3 data-toggle="tooltip" title="Lorem ipsum dolor sit amett cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.">Perspectiva Crecimiento</h3>
             </div>
             <div class="col-lg-3 col-md-12">
-              <a href="http://srvdpeead02/course/view.php?id=40&section=2">
                 <p class="btn-1 btn-azul">Desarrollar un equipo solido y mejorar el espiritu de trabajo</p>
-              </a>
             </div>
             <div class="col-lg-3 col-md-12">
                 <p class="btn-1 btn-azul">Capacitar a los empleados para el uso de nuevas tecnologias</p>
