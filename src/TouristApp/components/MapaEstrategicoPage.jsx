@@ -1,8 +1,7 @@
 const MapaEstrategicoPage = () => {
   return (
     <>
-     
-      <div className="container">
+      <div className="container container-mapa">
         <div className="row" id="titulo">
           <div className="col-sm-12">
             <h1 className="">
