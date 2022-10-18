@@ -15,7 +15,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="flex items-center justify-between px-2 py-4 bg-black text-white">
+    <nav className="flex flex-col gap-4 md:flex-row  items-center justify-between px-2 py-4 bg-black text-white">
       <div className="flex gap-4">
         <Link to="/">Tourist App</Link>
         <NavLink
