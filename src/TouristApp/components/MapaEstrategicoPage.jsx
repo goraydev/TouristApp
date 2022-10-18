@@ -7,7 +7,7 @@ const MapaEstrategicoPage = () => {
     <div class="container">
     <div class="row" id="titulo">
             <div class="col-sm-12">
-              <h1 class="">Mapa Estratégico / <b>2016 - 2021</b> / Defensoria Pública do RS</h1>
+              <h1 class="">Mapa Estratégico / <b>2022 - 2023</b> / Tourist App</h1>
             </div>
           </div>
       <div class="fundo-branco row-eq-height row" id="linha-um">
