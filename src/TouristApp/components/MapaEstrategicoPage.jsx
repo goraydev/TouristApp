@@ -32,10 +32,15 @@ const MapaEstrategicoPage = () => {
           <div className="cabecalho col-lg-4 col-md-12">
             <h2>Valores</h2>
             <p>
-              Ética e Respeito; Foco em Resultado; Confiabilidade e
-              Credibilidade; Valorização das Pessoas; Acolhimento e Humanidade;
-              Comprometimento e Engajamento de Todos; Transparência.
+            
+              <li type="disc">Seguridad</li>
+              <li>Atencion </li>
+              <li>Puntualidad</li>
+              <li>Honestidad</li>
+              <li>Confianza</li>
+            
             </p>
+            
           </div>
         </div>
 
